@@ -51,11 +51,24 @@
 
   <body id="page-top">
 
-    <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VV9SGV"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
+    <script type="text/javascript">
+      document.cookie="utagdb=true";
+
+      var utag_data = {
+          "tealium_event" : "page_view",
+          "page_type"     : "video",
+          "page_name"     : "Tealium YouTube Demo"
+      };
+      </script>
+      
+      <script type="text/javascript">
+          (function(a,b,c,d){
+          a='//tags.tiqcdn.com/utag/edunz/swnz/qa/mobile.html?_cb='+Math.random();
+          b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+          a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+          })();
+      </script>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
@@ -92,7 +105,10 @@
       <div class="container">
       <iframe src="https://player.vimeo.com/video/243244233" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     <p><a href="https://vimeo.com/243244233">Unexpected Discoveries</a> from <a href="https://vimeo.com/madebyfern">Fern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-  </div>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6oeEr35E328?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+    
     </header>
 
     <!-- Portfolio Grid Section -->

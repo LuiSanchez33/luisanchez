@@ -1,0 +1,51 @@
+<div>
+  <div class="swnz-0">
+    <div class="swnz-1">
+      <h3 style="display:none;">{{title}}</h3>
+      <p class="chakra-text swnz-3">{{message}}</p>
+        <div class="option_set" style="display: none;">
+                <div class="option">
+                <input type="radio" id="privacy_pref_optin" name="privacy_pref" value="optin" checked="checked"/>
+                <label for="privacy_pref_optin">agree</label>
+                </div>
+                <div class="option">
+                <input type="radio" id="privacy_pref_optout" name="privacy_pref" value="optout" />
+                <label for="privacy_pref_optout">disagree</label>
+                </div>
+        </div>
+        <div class="swnz-1">
+           <div id="consent_prompt_submit" class="chakra-button swnz-5">{{confirmation_button}}</div>
+        </div>
+    </div>
+  </div>
+  <div class="close_btn_thick"></div>
+</div>
+
+************************
+****HTML DEFAULT****
+************************
+
+<div class="privacy_prompt explicit_consent">
+    <div class="privacy_prompt_content">
+            <h1>{{title}}</h1>
+        <p>{{message}}</p>
+            <div class="option_set">
+                <div class="option">
+                    <input type="radio" id="privacy_pref_optin" name="privacy_pref" value="optin">
+                        <label for="privacy_pref_optin">{{opt_in}}</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="privacy_pref_optout" name="privacy_pref" value="optout">
+                        <label for="privacy_pref_optout">{{opt_out}}</label>
+                </div>
+            </div>
+    </div>
+    <div class="privacy_prompt_footer">
+            <div id="consent_prompt_footer">
+                <a href="{{privacy_policy_url}}">{{privacy_policy_text}}</a>
+                <span style="padding-right: 30px;"> </span>
+                <div id="consent_prompt_submit" class="button right">{{confirmation_button}}</div>
+            </div>
+    </div>
+  <div class="close_btn_thick"></div>
+</div>
