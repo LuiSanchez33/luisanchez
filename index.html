@@ -649,6 +649,21 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
+
+    <script type="text/javascript">
+      window.addEventListener('submit', function (event) { // Listen for form submit event
+      // Trigger postMessage
+      parent.postMessage(
+      {
+      'formEvent': 'Register',
+      'formFieldCategory': 'anything',
+      'formFieldAction': 'anything',
+      'formFieldLabel': 'anything'
+      },
+      "https://luisanchez33.github.io/luisanchez/") // replace with Top Domain
+      }, false);
+      </script>
+
   </body>
 
 </html>
